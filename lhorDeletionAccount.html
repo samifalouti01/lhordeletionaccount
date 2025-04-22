@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Delete Your Account in l-Hor</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #ff6b6b;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 700px;
+            width: 90%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--light-bg);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .warning-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .steps {
+            counter-reset: step-counter;
+            padding: 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .step-number {
+            counter-increment: step-counter;
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .step-number::before {
+            content: counter(step-counter);
+        }
+        
+        .step-content {
+            flex-grow: 1;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+        
+        .highlight {
+            background-color: #ffecec;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .note {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid var(--secondary-color);
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 4px;
+            margin-right: 5px;
+            position: relative;
+        }
+        
+        .settings-icon::before,
+        .settings-icon::after {
+            content: "";
+            position: absolute;
+            background-color: white;
+        }
+        
+        .settings-icon::before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: 5px;
+            left: 5px;
+        }
+        
+        .delete-icon::before,
+        .delete-icon::after {
+            content: "";
+            position: absolute;
+            background-color: white;
+            width: 12px;
+            height: 2px;
+            top: 9px;
+            left: 4px;
+        }
+        
+        .delete-icon::before {
+            transform: rotate(45deg);
+        }
+        
+        .delete-icon::after {
+            transform: rotate(-45deg);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .warning-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="warning-icon">!</div>
+            <h1>How to Delete Your Account in l-Hor</h1>
+        </header>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number"></div>
+                <div class="step-content">
+                    <div class="step-title">Open the app</div>
+                    <p>Launch the l-Hor application on your device.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number"></div>
+                <div class="step-content">
+                    <div class="step-title">Go to <span class="highlight">Profile</span></div>
+                    <p>Navigate to your profile section by tapping on the menu icon usually located at top left of the screen, and click on Profile icon.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number"></div>
+                <div class="step-content">
+                    <div class="step-title">Click on <span class="highlight">Settings <span class="icon settings-icon"></span></span> icon</div>
+                    <p>Find and tap on the settings icon typically represented by a gear or cog symbol.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number"></div>
+                <div class="step-content">
+                    <div class="step-title">Tap on <span class="highlight">Delete Account <span class="icon delete-icon"></span></span></div>
+                    <p>Scroll down in the settings menu to find the "Delete Account" option and tap on it.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number"></div>
+                <div class="step-content">
+                    <div class="step-title">Confirm deletion</div>
+                    <p>Follow any additional prompts to confirm that you want to delete your account. You may need to enter your password or provide other verification.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Important:</strong> This will permanently delete your account and associated data from our servers. This action cannot be undone, so please make sure you want to proceed with account deletion.
+        </div>
+    </div>
+</body>
+</html>
